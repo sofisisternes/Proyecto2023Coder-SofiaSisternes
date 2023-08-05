@@ -277,14 +277,12 @@ footer img {
 
 .nosotros {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
     grid-template-areas:
-        "carrusel carrusel"
-        "somos objetivo"
-        "mision mision "
-        "vision vision";
+        "somos somos carrusel"
+        "valores mision vision";
     text-align: center;
     justify-content: center;
     margin: 50px;
@@ -298,45 +296,47 @@ footer img {
 }
 
 .somos {
-    background-color: #f6f6f6;
-    border: solid 2px #f6f6f6;
+    background-color: white;
     border-radius: 10px;
     padding: 20px;
     grid-area: somos;
-    height: 200px;
+    height: auto;
     width: auto;
 }
 
 .mision {
-    background-color: #f6f6f6;
-    border: solid 2px #f6f6f6;
+    background-color: white;
+    border: solid 2px black;
     border-radius: 10px;
     padding: 20px;
     grid-area: mision;
-    height: 200px;
+    height: auto;
     width: auto;
 }
 
 .vision {
-    background-color: #f6f6f6;
-    border: solid 2px #f6f6f6;
+    background-color: white;
+    border: solid 2px black;
     border-radius: 10px;
     padding: 20px;
     grid-area: vision;
-    height: 200px;
+    height: auto;
     width: auto;
 }
 
-.objetivo {
-    background-color: #f6f6f6;
-    border: solid 2px #f6f6f6;
+.valores {
+    background-color: white;
+    border: solid 2px black;
     border-radius: 10px;
     padding: 20px;
-    grid-area: objetivo;
-    height: 200px;
+    grid-area: valores;
+    height: auto;
     width: auto;
 }
 
+.cambiotamaño {
+    height: auto;
+}
 
 /*media*/
 
@@ -351,41 +351,48 @@ footer img {
         text-decoration: none;
         display: block;
     }
+
     .menu li a:hover {
         background-color: white
     }
 }
 
 @media only screen and (max-width:480px) {
-   
+
     .inicio {
         display: block;
+        height: auto;
+        width: 90%;
+        margin: 20px auto;
+
+
     }
 }
+
 @media only screen and (max-width:480px) {
     .nosotros1 {
         height: auto;
-        width: 80%;
-    
+        width: 90%;
         padding: 10px;
         background-color: #f6f6f6;
         text-align: center;
         border: #f6f6f6 solid 1px;
         border-radius: 10px;
+        margin: 10px auto;
     }
-    
-    
+
     .nosotros2 {
         text-align: center;
         margin: 20px;
     }
 }
+
 @media only screen and (max-width:480px) {
-    .catalogo{
+    .catalogo {
         display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 1fr 1fr 1fr ;
-        row-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 10px;
         grid-auto-flow: row;
         grid-template-areas:
             "producto1"
@@ -395,6 +402,10 @@ footer img {
             "producto5"
             "producto6";
         justify-content: center;
+    }
+
+    .catalogo section {
+        margin: 10px 0;
     }
 
     .producto1 {
@@ -408,13 +419,51 @@ footer img {
     .producto3 {
         grid-area: producto3;
     }
+
     .producto4 {
         grid-area: producto4;
     }
+
     .producto5 {
         grid-area: producto5;
     }
+
     .producto6 {
         grid-area: producto6;
+    }
+
+    .catalogo article {
+        border: black solid 1px;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .form2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "datos__form"
+            "datos__foto";
+        margin: 0 auto;
+
+    }
+
+    .datos__form {
+        grid-area: datos__form;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .datos__foto {
+        grid-area: datos__foto;
+        max-width: 100vw;
+        height: auto;
+
     }
 }
