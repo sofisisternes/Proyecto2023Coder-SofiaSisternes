@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 h2 {
     font-family: 'Montserrat', sans-serif;
     src: url(../fonts/static/Montserrat-Bold.ttf);
@@ -347,16 +346,9 @@ footer img {
 }
 
 @media only screen and (max-width:480px) {
-    header {
-        display: flex;
-        flex-direction: column;
-
-    }
-}
-
-@media only screen and (max-width:480px) {
     .menu li {
         display: block;
+        padding: 0;
         text-align: start;
     }
 
@@ -366,9 +358,6 @@ footer img {
         display: block;
     }
 
-    .menu li a:hover {
-        background-color: white
-    }
 }
 
 @media only screen and (max-width:480px) {
@@ -398,7 +387,7 @@ footer img {
 
     .nosotros2 {
         text-align: center;
-    
+
     }
 }
 
@@ -455,6 +444,7 @@ footer img {
         margin-right: 60px;
     }
 }
+
 @media only screen and (max-width:480px) {
     .duda {
         height: auto;
@@ -466,10 +456,12 @@ footer img {
         border-radius: 10px;
         margin: 10px auto;
     }
-    .duda__boton{
+
+    .duda__boton {
         justify-content: center;
     }
-    }
+}
+
 @media only screen and (max-width:480px) {
     .form2 {
         display: grid;
@@ -495,3 +487,37 @@ footer img {
     }
 }
 
+@media only screen and (max-width:480px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "carrusel"
+            "somos"
+            "mision"
+            "vision"
+            "valores";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vision .mision .valores {
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .carrusel {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    footer {
+        font-size: small;
+    }
+}
