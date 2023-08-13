@@ -97,6 +97,14 @@
         <img src="../img/pagos.png" alt="pagos">
         <p>Aceptamos todos los medios de pago</p>
     </footer>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.querySelector(".menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
 </body>
 
 </html>

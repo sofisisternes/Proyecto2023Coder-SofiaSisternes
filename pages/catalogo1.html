@@ -17,6 +17,8 @@
             </a>
         </div>
         <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="menu">
                 <li> <a href="../index.html"> INICIO </a> </li>
                 <li> <a href="./nosotros.html">NOSOTROS</a></li>
@@ -109,6 +111,14 @@
         <img src="../img/pagos.png" alt="pagos">
         <p>Aceptamos todos los medios de pago</p>
     </footer>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.querySelector(".menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
 </body>
 
 </html>
