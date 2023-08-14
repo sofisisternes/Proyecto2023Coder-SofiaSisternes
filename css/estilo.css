@@ -72,7 +72,8 @@ main {
     text-decoration: none;
     display: inline-block;
 }
-#menu-toggle{
+
+#menu-toggle {
     visibility: hidden;
 }
 
@@ -360,9 +361,11 @@ footer img {
         text-decoration: none;
         display: block;
     }
-#menu-toggle{
-    visibility: hidden;
-}
+
+    #menu-toggle {
+        visibility: hidden;
+    }
+
     .menu-icon {
         display: block;
     }
@@ -391,9 +394,10 @@ footer img {
         margin: 0;
         padding: 10px 20px;
     }
+
     .menu li a:hover {
-    background-color: white
-}
+        background-color: white
+    }
 
 }
 
@@ -414,11 +418,14 @@ footer img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: auto;
-        margin: 20px auto;
-        max-width: 90%;
-        width: 200px;
+        margin: 0 auto;
+    }
 
+    .inicio img {
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+        margin: 0;
     }
 }
 
@@ -457,8 +464,10 @@ footer img {
         justify-content: center;
     }
 
-    .catalogo section {
-        margin: 10px 0;
+    .catalogo img {
+        width: 100%;
+        max-width: 300px;
+        padding: 0;
     }
 
     .producto1 {
@@ -489,8 +498,7 @@ footer img {
         border: black solid 1px;
         border-radius: 10px;
         padding: 5px;
-        margin-left: 60px;
-        margin-right: 60px;
+
     }
 }
 
@@ -508,6 +516,8 @@ footer img {
 
     .duda__boton {
         justify-content: center;
+        margin: 0;
+        width: auto;
     }
 }
 
@@ -560,13 +570,22 @@ footer img {
         text-align: center;
     }
 
+    .vision .mision .valores img {
+        width: 100%;
+    }
+
     .carrusel {
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
     }
 }
 
 @media only screen and (max-width:480px) {
     footer {
-        font-size: small;
+        width: 100%;
+        font-size: xx-small;
+        margin: 0;
+        justify-content: center;
+
     }
 }
