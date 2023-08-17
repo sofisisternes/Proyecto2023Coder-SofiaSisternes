@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/static/Montserrat-Bold.ttf);
+    color: black;
+    text-align: center;
+    margin: 20px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/static/Montserrat-Bold.ttf);
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/static/Montserrat-Regular.ttf);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/static/Montserrat-Regular.ttf);
+    font-size: auto;
+}
+
+
+header {
+    background-color: #BB9A6Fb9;
+    text-align: center;
+    border: grey 1px solid;
+
+    .logo img {
+        width: auto;
+        height: 100px;
+        text-transform: uppercase;
+    }
+
+    nav {
+        .menu {
+            padding: 0;
+            background-color: #F2E8D3;
+            list-style: none;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            src: url(../fonts/static/Montserrat-Regular.ttf);
+            font-size: auto;
+
+            li {
+                display: inline-block;
+                text-align: center;
+            }
+
+            &:hover {
+                background-color: white;
+            }
+
+            a {
+                padding: 10px;
+                margin: 10px;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            #menu-toggle {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "producto1 producto2 producto3"
+        "producto4 producto5 producto6";
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 20px;
+    margin: 10px;
+
+    .producto1 {
+        grid-area: producto1;
+    }
+
+    .producto2 {
+        grid-area: producto2;
+    }
+
+    .producto3 {
+        grid-area: producto3;
+    }
+
+    .producto4 {
+        grid-area: producto4;
+    }
+
+    .producto5 {
+        grid-area: producto5;
+    }
+
+    .producto6 {
+        grid-area: producto6;
+    }
+
+    article {
+        border: black double 1px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    button {
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        border: black solid 1px;
+        font-size: medium;
+        font-weight: bold;
+        width: 100px;
+    }
+}
