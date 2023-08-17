@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color:$fondo;
+    text-align: center;
+    border: grey 1px solid;
+
+    #menu-toggle {
+        visibility: hidden;
+    }
+
+    .logo img {
+        width: auto;
+        height: 100px;
+        text-transform: uppercase;
+    }
+
+    nav {
+        .menu {
+            padding: 0;
+            background-color: $fondo2;
+            list-style: none;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+            font-family: $font;
+            src: url(../fonts/static/Montserrat-Regular.ttf);
+            font-size: auto;
+
+            li {
+                display: inline-block;
+                text-align: center;
+
+                &:hover {
+                    background-color: white;
+                }
+
+                a {
+                    padding: 10px;
+                    margin: 10px;
+                    text-decoration: none;
+                    display: inline-block;
+                    color: black;
+                }
+            }
+        }
+    }
+}

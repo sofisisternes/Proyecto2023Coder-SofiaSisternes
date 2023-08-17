@@ -1,0 +1,270 @@
+@media only screen and (max-width:480px) {
+    header {
+        #menu-toggle {
+            visibility: hidden;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+        .menu.active {
+            display: block;
+            position: relative;
+        }
+
+        nav {
+            .menu {
+                display: none;
+                position: relative;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: $fondo2;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+
+                li {
+                    display: block;
+                    padding: 0;
+                    text-align: start;
+                    margin: 0;
+                    padding: 10px 20px;
+
+                    a {
+                        padding: 10px;
+                        text-decoration: none;
+                        display: block;
+                        color: black;
+
+                        &:hover {
+                            background-color: white
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .menu-icon {
+        display: none;
+
+        .menu {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+
+        img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .nosotros1 {
+        height: auto;
+        width: 90%;
+        padding: 10px;
+        background-color: $fondo3;
+        text-align: center;
+        border: $fondo3 solid 1px;
+        border-radius: 10px;
+        margin: 10px auto;
+
+        .nosotros2 {
+            text-align: center;
+        }
+
+        .nosotros__boton {
+            background-color: white;
+            border-radius: 10px;
+            color: black;
+            border: black solid 1px;
+            font-size: medium;
+            font-weight: bold;
+            width: 100px;
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .catalogo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 10px;
+        grid-auto-flow: column;
+        grid-template-areas:
+            "producto1"
+            "producto2"
+            "producto3"
+            "producto4"
+            "producto5"
+            "producto6";
+        justify-content: center;
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            padding: 0;
+        }
+
+        article {
+            border: black solid 1px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        button {
+            background-color: white;
+            border-radius: 10px;
+            color: black;
+            border: black solid 1px;
+            font-size: medium;
+            font-weight: bold;
+            width: 100px;
+        }
+
+        .producto1 {
+            grid-area: producto1;
+        }
+
+        .producto2 {
+            grid-area: producto2;
+        }
+
+        .producto3 {
+            grid-area: producto3;
+        }
+
+        .producto4 {
+            grid-area: producto4;
+        }
+
+        .producto5 {
+            grid-area: producto5;
+        }
+
+        .producto6 {
+            grid-area: producto6;
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .duda {
+        height: auto;
+        width: 90%;
+        padding: 10px;
+        background-color: $fondo3;
+        text-align: center;
+        border: $fondo3 solid 1px;
+        border-radius: 10px;
+        margin: 10px auto;
+
+        .duda__boton {
+            justify-content: center;
+            margin: 0;
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .form2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "datos__form";
+        margin: 0 auto;
+        justify-items: center;
+
+        .datos__form {
+            grid-area: datos__form;
+        }
+
+        .datos__foto img {
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: auto;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "carrusel"
+            "somos"
+            "mision"
+            "vision"
+            "valores";
+        justify-content: center;
+        align-items: center;
+
+        .vision {
+            grid-area: vision;
+        }
+
+        .mision {
+            grid-area: mision;
+        }
+
+        .valores {
+            grid-area: valores;
+        }
+
+        .somos {
+            grid-area: somos;
+        }
+
+        .carrusel {
+            width: 100%;
+            max-width: 400px;
+            grid-area: carrusel;
+        }
+
+        .vision .mision .valores {
+            background-color: white;
+            border: solid 2px black;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    footer {
+        width: 100%;
+        font-size: xx-small;
+        margin: 0;
+        justify-content: center;
+
+    }
+}

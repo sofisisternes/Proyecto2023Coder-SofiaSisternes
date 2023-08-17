@@ -1,0 +1,59 @@
+.nosotros {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+        "somos somos carrusel "
+        "valores valores ."
+        ". mision mision"
+        "vision vision .";
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+        .somos {
+        background-color: white;
+        border-radius: 10px;
+        grid-area: somos;
+        align-items: center;
+    }
+
+        .mision {
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 20px;
+        grid-area: mision;
+        height: auto;
+        width: auto;
+        margin-top: 50px;
+    }
+
+        .vision {
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 20px;
+        grid-area: vision;
+        height: auto;
+        width: auto;
+        margin-top: 50px;
+    }
+
+        .valores {
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 20px;
+        grid-area: valores;
+        height: auto;
+        width: auto;
+        margin-top: 50px;
+    }
+
+        .carrusel {
+        width: 500px;
+        height: 300px;
+        grid-area: carrusel;
+    }
+}

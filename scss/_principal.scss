@@ -1,0 +1,102 @@
+.inicio {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+
+    img {
+        width: 400px;
+        height: auto;
+        margin: 20px;
+        border-radius: 10px;
+    }
+}
+
+.catalogo__inicio {
+    margin: 30px;
+    text-align: center;
+
+    .catalogo__boton {
+        width: 10rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        border: black solid 1px;
+        font-size: medium;
+        font-weight: bold;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.nosotros1 {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: $fondo3;
+    text-align: center;
+    border: $fondo3 solid 1px;
+    border-radius: 10px;
+
+    button {
+        width: 10rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        border: black solid 1px;
+        font-size: medium;
+        font-weight: bold;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nosotros2 {
+            text-align: center;
+            margin: 20px;
+
+            p {
+                font-family: $font;
+                src: url(../fonts/static/Montserrat-Regular.ttf);
+                font-size: auto;
+            }
+        }
+    }
+}
+
+.duda {
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: $fondo3;
+    text-align: center;
+    border: $fondo3 solid 1px;
+    border-radius: 10px;
+
+    .duda__boton {
+        width: 16rem;
+        height: 3rem;
+        margin: 2rem;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        border: black solid 1px;
+        font-size: medium;
+        font-weight: bold;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

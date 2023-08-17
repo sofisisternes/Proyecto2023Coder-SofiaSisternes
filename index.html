@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title> Indumentaria </title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
@@ -35,7 +36,7 @@
                 <img class="inicio2" src="./img/inicio1.jpg" alt="foto inicial 2">
             </a>
         </section>
-        <section class="nosotros1">
+        <section data-aos="fade-up" class="nosotros1">
             <h2 class="titulo__estilo"> NOSOTROS</h2>
             <article>
                 <h4>Quienes somos?</h4>
@@ -48,7 +49,7 @@
                 </button>
             </article>
         </section>
-        <section class="catalogo__inicio">
+        <section data-aos="fade-up" class="catalogo__inicio">
             <h2 class="titulo__estilo"> CATALOGO</h2>
             <h4>Conoce nuestros productos</h4>
             <div class="catalogo">
@@ -81,7 +82,7 @@
                 <a href="./pages/catalogo.html">VER MAS</a>
             </button>
         </section>
-        <div class="duda">
+        <div data-aos="fade-up" class="duda">
             <h2 class="titulo__estilo"> Tenes alguna duda?</h2>
             <h4 class="duda__subtitulo">Te responderemos a la brevedad</h4>
             <button class="duda__boton">
@@ -103,6 +104,8 @@
         <p> Hacemos envios a todo Uruguay</p>
         <img src="./img/pagos.png" alt="pagos">
         <p>Aceptamos todos los medios de pago</p>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>   AOS.init(); </script>
     </footer>
     <script>
         const menuToggle = document.getElementById("menu-toggle");

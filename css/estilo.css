@@ -3,33 +3,12 @@
   padding: 0;
   box-sizing: border-box; }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  src: url(../fonts/static/Montserrat-Bold.ttf);
-  color: black;
-  text-align: center;
-  margin: 20px; }
-
-h4 {
-  font-family: 'Montserrat', sans-serif;
-  src: url(../fonts/static/Montserrat-Bold.ttf);
-  font-size: 20px;
-  color: black;
-  line-height: 1.5; }
-
-h5 {
-  font-family: 'Montserrat', sans-serif;
-  src: url(../fonts/static/Montserrat-Regular.ttf); }
-
-p {
-  font-family: 'Montserrat', sans-serif;
-  src: url(../fonts/static/Montserrat-Regular.ttf);
-  font-size: auto; }
-
 header {
   background-color: #BB9A6Fb9;
   text-align: center;
   border: grey 1px solid; }
+  header #menu-toggle {
+    visibility: hidden; }
   header .logo img {
     width: auto;
     height: 100px;
@@ -41,21 +20,177 @@ header {
     margin: auto;
     text-align: center;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     src: url(../fonts/static/Montserrat-Regular.ttf);
     font-size: auto; }
     header nav .menu li {
       display: inline-block;
       text-align: center; }
-    header nav .menu:hover {
-      background-color: white; }
-    header nav .menu a {
-      padding: 10px;
-      margin: 10px;
+      header nav .menu li:hover {
+        background-color: white; }
+      header nav .menu li a {
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        display: inline-block;
+        color: black; }
+
+main h2 {
+  font-family: "Montserrat", sans-serif;
+  src: url(../fonts/static/Montserrat-Bold.ttf);
+  color: black;
+  text-align: center;
+  margin: 20px; }
+
+main h4 {
+  font-family: "Montserrat", sans-serif;
+  src: url(../fonts/static/Montserrat-Bold.ttf);
+  font-size: 20px;
+  color: black;
+  line-height: 1.5; }
+
+main h5 {
+  font-family: "Montserrat", sans-serif;
+  src: url(../fonts/static/Montserrat-Regular.ttf); }
+
+main p {
+  font-family: "Montserrat", sans-serif;
+  src: url(../fonts/static/Montserrat-Regular.ttf);
+  font-size: auto; }
+
+.redes {
+  text-align: center;
+  margin: 20px; }
+  .redes img {
+    width: auto;
+    height: 30px; }
+
+.inicio {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 400px; }
+  .inicio img {
+    width: 400px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px; }
+
+.catalogo__inicio {
+  margin: 30px;
+  text-align: center; }
+  .catalogo__inicio .catalogo__boton {
+    width: 10rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    border: black solid 1px;
+    font-size: medium;
+    font-weight: bold; }
+    .catalogo__inicio .catalogo__boton a {
       text-decoration: none;
-      display: inline-block; }
-    header nav .menu #menu-toggle {
-      visibility: hidden; }
+      color: black; }
+
+.nosotros1 {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  background-color: #f6f6f6;
+  text-align: center;
+  border: #f6f6f6 solid 1px;
+  border-radius: 10px; }
+  .nosotros1 button {
+    width: 10rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    border: black solid 1px;
+    font-size: medium;
+    font-weight: bold; }
+    .nosotros1 button a {
+      text-decoration: none;
+      color: black; }
+    .nosotros1 button .nosotros2 {
+      text-align: center;
+      margin: 20px; }
+      .nosotros1 button .nosotros2 p {
+        font-family: "Montserrat", sans-serif;
+        src: url(../fonts/static/Montserrat-Regular.ttf);
+        font-size: auto; }
+
+.duda {
+  height: 200px;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  background-color: #f6f6f6;
+  text-align: center;
+  border: #f6f6f6 solid 1px;
+  border-radius: 10px; }
+  .duda .duda__boton {
+    width: 16rem;
+    height: 3rem;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    border: black solid 1px;
+    font-size: medium;
+    font-weight: bold; }
+    .duda .duda__boton a {
+      text-decoration: none;
+      color: black; }
+
+.nosotros {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: "somos somos carrusel " "valores valores ." ". mision mision" "vision vision .";
+  text-align: center;
+  justify-content: center;
+  margin: 50px; }
+  .nosotros .somos {
+    background-color: white;
+    border-radius: 10px;
+    grid-area: somos;
+    align-items: center; }
+  .nosotros .mision {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 20px;
+    grid-area: mision;
+    height: auto;
+    width: auto;
+    margin-top: 50px; }
+  .nosotros .vision {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 20px;
+    grid-area: vision;
+    height: auto;
+    width: auto;
+    margin-top: 50px; }
+  .nosotros .valores {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 20px;
+    grid-area: valores;
+    height: auto;
+    width: auto;
+    margin-top: 50px; }
+  .nosotros .carrusel {
+    width: 500px;
+    height: 300px;
+    grid-area: carrusel; }
 
 .catalogo {
   display: grid;
@@ -91,3 +226,215 @@ header {
     font-size: medium;
     font-weight: bold;
     width: 100px; }
+
+.cambiopagina {
+  display: flex;
+  justify-content: center; }
+  .cambiopagina .cambio {
+    border: black 1px solid;
+    padding: 10px; }
+    .cambiopagina .cambio a {
+      text-decoration: none;
+      color: black; }
+
+.form2 {
+  margin: 30px;
+  display: flex;
+  justify-content: center; }
+  .form2 img {
+    margin-left: 20px;
+    width: auto;
+    height: 300px;
+    text-align: center; }
+  .form2 .mensaje {
+    height: 150px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #BB9A6Fb9;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  border: grey 1px solid; }
+  footer img {
+    margin-left: 30px;
+    width: auto;
+    height: 30px; }
+
+@media only screen and (max-width: 480px) {
+  header #menu-toggle {
+    visibility: hidden; }
+  header .menu-icon {
+    display: block; }
+  header .menu.active {
+    display: block;
+    position: relative; }
+  header nav .menu {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #F2E8D3;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; }
+    header nav .menu li {
+      display: block;
+      padding: 0;
+      text-align: start;
+      margin: 0;
+      padding: 10px 20px; }
+      header nav .menu li a {
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+        color: black; }
+        header nav .menu li a:hover {
+          background-color: white; } }
+
+@media only screen and (min-width: 481px) {
+  .menu-icon {
+    display: none; }
+    .menu-icon .menu {
+      display: block; } }
+
+@media only screen and (max-width: 480px) {
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; }
+    .inicio img {
+      max-width: 250px;
+      width: 100%;
+      height: auto;
+      margin: 0; } }
+
+@media only screen and (max-width: 480px) {
+  .nosotros1 {
+    height: auto;
+    width: 90%;
+    padding: 10px;
+    background-color: #f6f6f6;
+    text-align: center;
+    border: #f6f6f6 solid 1px;
+    border-radius: 10px;
+    margin: 10px auto; }
+    .nosotros1 .nosotros2 {
+      text-align: center; }
+    .nosotros1 .nosotros__boton {
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+      border: black solid 1px;
+      font-size: medium;
+      font-weight: bold;
+      width: 100px; } }
+
+@media only screen and (max-width: 480px) {
+  .catalogo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    grid-auto-flow: column;
+    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5" "producto6";
+    justify-content: center; }
+    .catalogo img {
+      width: 100%;
+      max-width: 300px;
+      padding: 0; }
+    .catalogo article {
+      border: black solid 1px;
+      border-radius: 10px;
+      padding: 5px; }
+    .catalogo button {
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+      border: black solid 1px;
+      font-size: medium;
+      font-weight: bold;
+      width: 100px; }
+    .catalogo .producto1 {
+      grid-area: producto1; }
+    .catalogo .producto2 {
+      grid-area: producto2; }
+    .catalogo .producto3 {
+      grid-area: producto3; }
+    .catalogo .producto4 {
+      grid-area: producto4; }
+    .catalogo .producto5 {
+      grid-area: producto5; }
+    .catalogo .producto6 {
+      grid-area: producto6; } }
+
+@media only screen and (max-width: 480px) {
+  .duda {
+    height: auto;
+    width: 90%;
+    padding: 10px;
+    background-color: #f6f6f6;
+    text-align: center;
+    border: #f6f6f6 solid 1px;
+    border-radius: 10px;
+    margin: 10px auto; }
+    .duda .duda__boton {
+      justify-content: center;
+      margin: 0;
+      width: auto; } }
+
+@media only screen and (max-width: 480px) {
+  .form2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "datos__form";
+    margin: 0 auto;
+    justify-items: center; }
+    .form2 .datos__form {
+      grid-area: datos__form; }
+    .form2 .datos__foto img {
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: auto;
+      margin-top: 10px; } }
+
+@media only screen and (max-width: 480px) {
+  .nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "carrusel" "somos" "mision" "vision" "valores";
+    justify-content: center;
+    align-items: center; }
+    .nosotros .vision {
+      grid-area: vision; }
+    .nosotros .mision {
+      grid-area: mision; }
+    .nosotros .valores {
+      grid-area: valores; }
+    .nosotros .somos {
+      grid-area: somos; }
+    .nosotros .carrusel {
+      width: 100%;
+      max-width: 400px;
+      grid-area: carrusel; }
+    .nosotros .vision .mision .valores {
+      background-color: white;
+      border: solid 2px black;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 10px;
+      text-align: center; }
+      .nosotros .vision .mision .valores img {
+        width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  footer {
+    width: 100%;
+    font-size: xx-small;
+    margin: 0;
+    justify-content: center; } }
