@@ -1,7 +1,7 @@
 .inicio {
     display: grid;
     grid-template-columns: auto auto;
-    text-align: center;
+    text-align: $text;
     display: flex;
     justify-content: center;
     height: 400px;
@@ -16,7 +16,7 @@
 
 .catalogo__inicio {
     margin: 30px;
-    text-align: center;
+    text-align: $text;
 
     .catalogo__boton {
         width: 10rem;
@@ -41,7 +41,7 @@
     margin: auto;
     padding: 10px;
     background-color: $fondo3;
-    text-align: center;
+    text-align: $text;
     border: $fondo3 solid 1px;
     border-radius: 10px;
 
@@ -61,7 +61,7 @@
         }
 
         .nosotros2 {
-            text-align: center;
+            text-align: $text;
             margin: 20px;
 
             p {
@@ -79,7 +79,7 @@
     margin: auto;
     padding: 10px;
     background-color: $fondo3;
-    text-align: center;
+    text-align: $text;
     border: $fondo3 solid 1px;
     border-radius: 10px;
 

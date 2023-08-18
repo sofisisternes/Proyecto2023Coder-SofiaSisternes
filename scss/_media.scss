@@ -80,13 +80,13 @@
         width: 90%;
         padding: 10px;
         background-color: $fondo3;
-        text-align: center;
+        text-align: $text;
         border: $fondo3 solid 1px;
         border-radius: 10px;
         margin: 10px auto;
 
         .nosotros2 {
-            text-align: center;
+            text-align: $text;
         }
 
         .nosotros__boton {
@@ -171,7 +171,7 @@
         width: 90%;
         padding: 10px;
         background-color: $fondo3;
-        text-align: center;
+        text-align: $text;
         border: $fondo3 solid 1px;
         border-radius: 10px;
         margin: 10px auto;
@@ -240,7 +240,8 @@
 
         .carrusel {
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
+            height: auto;
             grid-area: carrusel;
         }
 
@@ -250,7 +251,7 @@
             border-radius: 10px;
             margin: 5px;
             padding: 10px;
-            text-align: center;
+            text-align: $text;
 
             img {
                 width: 100%;

@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header {
-    background-color:$fondo;
-    text-align: center;
+    background-color: $fondo;
+    text-align: $text;
     border: grey 1px solid;
 
     #menu-toggle {
@@ -24,7 +25,7 @@ header {
             background-color: $fondo2;
             list-style: none;
             margin: auto;
-            text-align: center;
+            text-align: $text;
             font-weight: bold;
             font-family: $font;
             src: url(../fonts/static/Montserrat-Regular.ttf);
@@ -32,7 +33,7 @@ header {
 
             li {
                 display: inline-block;
-                text-align: center;
+                text-align: $text;
 
                 &:hover {
                     background-color: white;

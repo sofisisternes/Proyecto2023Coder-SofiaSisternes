@@ -8,17 +8,18 @@
         "valores valores ."
         ". mision mision"
         "vision vision .";
-    text-align: center;
+    text-align: $text;
     justify-content: center;
     margin: 50px;
-        .somos {
+
+    .somos {
         background-color: white;
         border-radius: 10px;
         grid-area: somos;
         align-items: center;
     }
 
-        .mision {
+    .mision {
         background-color: white;
         border: solid 2px black;
         border-radius: 10px;
@@ -29,7 +30,7 @@
         margin-top: 50px;
     }
 
-        .vision {
+    .vision {
         background-color: white;
         border: solid 2px black;
         border-radius: 10px;
@@ -40,7 +41,7 @@
         margin-top: 50px;
     }
 
-        .valores {
+    .valores {
         background-color: white;
         border: solid 2px black;
         border-radius: 10px;
@@ -51,7 +52,7 @@
         margin-top: 50px;
     }
 
-        .carrusel {
+    .carrusel {
         width: 500px;
         height: 300px;
         grid-area: carrusel;

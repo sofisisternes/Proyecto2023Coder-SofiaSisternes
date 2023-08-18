@@ -229,25 +229,45 @@ main p {
 
 .cambiopagina {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-family: "Montserrat", sans-serif; }
   .cambiopagina .cambio {
     border: black 1px solid;
+    border-radius: 10px;
+    justify-content: space-between;
     padding: 10px; }
     .cambiopagina .cambio a {
       text-decoration: none;
       color: black; }
 
+.preguntas {
+  font-weight: bold; }
+
+.centrartabla {
+  text-align: center; }
+
 .form2 {
   margin: 30px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-family: "Montserrat", sans-serif; }
+  .form2 input {
+    margin-bottom: 10px;
+    width: 100%; }
   .form2 img {
     margin-left: 20px;
     width: auto;
     height: 300px;
     text-align: center; }
   .form2 .mensaje {
-    height: 150px; }
+    height: 150px;
+    color: #888;
+    font-family: "Montserrat", sans-serif;
+    resize: none;
+    width: 100%; }
+    .form2 .mensaje .mensaje::placeholder {
+      color: #ccc;
+      font-family: "Montserrat", sans-serif; }
 
 footer {
   display: flex;
@@ -420,7 +440,8 @@ footer {
       grid-area: somos; }
     .nosotros .carrusel {
       width: 100%;
-      max-width: 400px;
+      max-width: 500px;
+      height: auto;
       grid-area: carrusel; }
     .nosotros .vision .mision .valores {
       background-color: white;

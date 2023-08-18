@@ -5,7 +5,7 @@
     grid-template-areas:
         "producto1 producto2 producto3"
         "producto4 producto5 producto6";
-    text-align: center;
+    text-align: $text;
     align-items: center;
     justify-content: space-around;
     row-gap: 20px;
@@ -55,9 +55,12 @@
 .cambiopagina {
     display: flex;
     justify-content: center;
+    font-family: $font;
 
     .cambio {
         border: black 1px solid;
+        border-radius: 10px;
+        justify-content: space-between;
         padding: 10px;
 
         a {
