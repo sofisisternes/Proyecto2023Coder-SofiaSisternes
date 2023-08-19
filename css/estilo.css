@@ -35,27 +35,41 @@ header {
         display: inline-block;
         color: black; }
 
+@font-face {
+  main {
+    font-family: "Montserrat", sans-serif;
+    src: url(../fonts/static/Montserrat-Bold.ttf); } }
+
 main h2 {
   font-family: "Montserrat", sans-serif;
-  src: url(../fonts/static/Montserrat-Bold.ttf);
   color: black;
   text-align: center;
   margin: 20px; }
 
+main .titulo__personalizado {
+  font-family: "Montserrat", sans-serif !important;
+  color: black;
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 24px; }
+
 main h4 {
   font-family: "Montserrat", sans-serif;
-  src: url(../fonts/static/Montserrat-Bold.ttf);
   font-size: 20px;
   color: black;
   line-height: 1.5; }
 
+@font-face {
+  main {
+    font-family: "Montserrat", sans-serif;
+    src: url(../fonts/static/Montserrat-Regular.ttf); } }
+
 main h5 {
-  font-family: "Montserrat", sans-serif;
-  src: url(../fonts/static/Montserrat-Regular.ttf); }
+  font-family: "Montserrat", sans-serif; }
 
 main p {
   font-family: "Montserrat", sans-serif;
-  src: url(../fonts/static/Montserrat-Regular.ttf);
   font-size: auto; }
 
 .redes {
@@ -89,7 +103,10 @@ main p {
     color: black;
     border: black solid 1px;
     font-size: medium;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: opacity 0.3s ease; }
+    .catalogo__inicio .catalogo__boton:hover {
+      opacity: 0.5; }
     .catalogo__inicio .catalogo__boton a {
       text-decoration: none;
       color: black; }
@@ -102,16 +119,21 @@ main p {
   background-color: #f6f6f6;
   text-align: center;
   border: #f6f6f6 solid 1px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px black; }
   .nosotros1 button {
     width: 10rem;
     height: 3rem;
+    margin: 2rem;
     background-color: white;
     border-radius: 10px;
     color: black;
     border: black solid 1px;
     font-size: medium;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: opacity 0.3s ease; }
+    .nosotros1 button:hover {
+      opacity: 0.5; }
     .nosotros1 button a {
       text-decoration: none;
       color: black; }
@@ -131,7 +153,8 @@ main p {
   background-color: #f6f6f6;
   text-align: center;
   border: #f6f6f6 solid 1px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px black; }
   .duda .duda__boton {
     width: 16rem;
     height: 3rem;
@@ -141,7 +164,10 @@ main p {
     color: black;
     border: black solid 1px;
     font-size: medium;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: opacity 0.3s ease; }
+    .duda .duda__boton:hover {
+      opacity: 0.5; }
     .duda .duda__boton a {
       text-decoration: none;
       color: black; }
@@ -159,7 +185,14 @@ main p {
     background-color: white;
     border-radius: 10px;
     grid-area: somos;
-    align-items: center; }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    justify-content: center;
+    height: 100%; }
   .nosotros .mision {
     background-color: white;
     border: solid 2px black;
@@ -217,15 +250,24 @@ main p {
   .catalogo article {
     border: black double 1px;
     border-radius: 10px;
-    padding: 10px; }
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s; }
+    .catalogo article:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 4px 8px black; }
   .catalogo button {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     color: black;
     border: black solid 1px;
     font-size: medium;
     font-weight: bold;
-    width: 100px; }
+    width: 100px;
+    transition: opacity 0.3s ease;
+    padding: 5px;
+    margin: 5px; }
+    .catalogo button:hover {
+      opacity: 0.5; }
 
 .cambiopagina {
   display: flex;

@@ -1,31 +1,48 @@
 main {
-    h2 {
+    @font-face {
         font-family: $font;
         src: url(../fonts/static/Montserrat-Bold.ttf);
+    }
+
+    h2 {
+        font-family: $font;
         color: black;
         text-align: $text;
         margin: 20px;
     }
 
+    .titulo__personalizado {
+        font-family: $font !important;
+        color: black;
+        text-align: $text;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
     h4 {
         font-family: $font;
-        src: url(../fonts/static/Montserrat-Bold.ttf);
         font-size: 20px;
         color: black;
         line-height: 1.5;
     }
 
-    h5 {
+    @font-face {
         font-family: $font;
         src: url(../fonts/static/Montserrat-Regular.ttf);
     }
 
+    h5 {
+        font-family: $font;
+    }
+
     p {
         font-family: $font;
-        src: url(../fonts/static/Montserrat-Regular.ttf);
         font-size: auto;
     }
 }
+
+
 
 .redes {
     text-align: $text;
