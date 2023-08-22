@@ -272,7 +272,8 @@ main p {
 .cambiopagina {
   display: flex;
   justify-content: center;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  margin: 40px; }
   .cambiopagina .cambio {
     border: black 1px solid;
     border-radius: 10px;
@@ -323,6 +324,9 @@ footer {
     margin-left: 30px;
     width: auto;
     height: 30px; }
+  footer p {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 5px; }
 
 @media only screen and (max-width: 480px) {
   header #menu-toggle {
@@ -401,8 +405,7 @@ footer {
     grid-template-rows: auto;
     row-gap: 10px;
     grid-auto-flow: column;
-    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5" "producto6";
-    justify-content: center; }
+    grid-template-areas: "producto1" "producto2" "producto3" "producto4" "producto5" "producto6"; }
     .catalogo img {
       width: 100%;
       max-width: 300px;
@@ -410,7 +413,11 @@ footer {
     .catalogo article {
       border: black solid 1px;
       border-radius: 10px;
-      padding: 5px; }
+      padding: 5px;
+      transition: none;
+      width: 80%;
+      height: auto;
+      margin: auto; }
     .catalogo button {
       background-color: white;
       border-radius: 10px;

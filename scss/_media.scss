@@ -115,7 +115,6 @@
             "producto4"
             "producto5"
             "producto6";
-        justify-content: center;
 
         img {
             width: 100%;
@@ -127,6 +126,10 @@
             border: black solid 1px;
             border-radius: 10px;
             padding: 5px;
+            transition: none;
+            width: 80%;
+            height: auto;
+            margin: auto;
         }
 
         button {
