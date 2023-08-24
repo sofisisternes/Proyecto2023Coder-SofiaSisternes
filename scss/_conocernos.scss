@@ -18,61 +18,35 @@
     }
 
     .somos {
-        background-color: white;
-        border: solid 1px black;
-        border-radius: 10px;
         grid-area: somos;
-        width: auto;
-        height: auto;
-        box-shadow: 0px 2px 4px black;
-        padding: 20px;
-        margin-top: 50px;
     }
 
     .mision {
-        background-color: white;
-        border: solid 1px black;
-        border-radius: 10px;
-        padding: 20px;
         grid-area: mision;
-        height: auto;
-        width: auto;
-        margin-top: 50px;
-        box-shadow: 0px 2px 4px black;
     }
 
     .vision {
-        background-color: white;
-        border: solid 1px black;
-        border-radius: 10px;
-        padding: 20px;
         grid-area: vision;
-        height: auto;
-        width: auto;
-        margin-top: 50px;
-        box-shadow: 0px 2px 4px black;
     }
 
     .valores {
+        grid-area: valores;
+    }
+
+    article{
         background-color: white;
         border: solid 1px black;
         border-radius: 10px;
-        padding: 20px;
-        grid-area: valores;
-        height: auto;
         width: auto;
-        margin-top: 50px;
+        height: auto;
         box-shadow: 0px 2px 4px black;
+        padding: 20px;
+        margin-top: 50px;
     }
 
     .carrusel {
         width: 100%;
-        height: 300px;
         grid-area: carrusel;
         justify-self: center;
-
-        .boton {
-            bottom: -80px;
-        }
     }
 }

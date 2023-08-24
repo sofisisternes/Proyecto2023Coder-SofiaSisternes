@@ -83,3 +83,66 @@
         }
     }
 }
+
+#textCarousel {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+    .carousel-content {
+        display: flex;
+        width: 300%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+        flex-shrink: 0;
+      width: 33.33%; 
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: $text;
+
+        img {
+            max-width: 50%;
+            width: auto;
+        }
+
+        button {
+            background-color: white;
+            border-radius: 5px;
+            color: black;
+            border: black solid 1px;
+            font-size: medium;
+            font-weight: bold;
+            width: 100px;
+            transition: opacity 0.3s ease;
+            padding: 5px;
+            margin: 5px;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    #prevBtn,
+    #nextBtn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    #prevBtn {
+        left: 10px;
+        background-color:  red;
+    }
+
+    #nextBtn {
+        right: 10px;
+    }
+}

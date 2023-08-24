@@ -7,9 +7,13 @@
     input {
         margin-bottom: 10px;
         width: 100%;
+        border-radius: 10px;
+        font-family: $font;
+        background-color: white;
+        border: 1px solid black;
     }
 
-    img {
+    .mapa iframe {
         margin-left: 20px;
         width: auto;
         height: 300px;

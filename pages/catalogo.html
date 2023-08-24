@@ -31,55 +31,92 @@
         </nav>
     </header>
     <main>
+        <h2> PRODUCTOS EN SALE </h2>
+        <div id="textCarousel">
+            <button id="prevBtn">Previous</button>
+            <div class="carousel-content">
+                <div class="carousel-item">
+                    <article>
+                        <h5>Body liso</h5>
+                        <p> <del>$900</del>&nbsp;$720 </p>
+                        <img src="../img/13.jpg" alt="producto body">
+                        <a src="#">
+                            <button>COMPRAR</button>
+                        </a>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article>
+                        <h5>Campera marron cordero</h5>
+                        <p><del>$2600</del>&nbsp;$2080</p>
+                        <img src="../img/14.jpg" alt="producto campera">
+                        <a src="#">
+                            <button>COMPRAR</button>
+                        </a>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article>
+                        <img src="../img/19.jpg" alt="producto pantalon">
+                        <h5>Ecocuero negro</h5>
+                        <p> <del>$2500</del>&nbsp;$2000 </p>
+                        <a src="#">
+                            <button>COMPRAR</button>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <button id="nextBtn">Siguiente</button>
+        </div>
         <h2> CATALOGO</h2>
         <section class="catalogo">
             <article class="producto1">
-                <img class="imagen1" src="../img/1.jpg" alt="producto campera">
-                <h5 class="nombre1">Campera Puffer</h5>
-                <p class="precio1"> $3000</p>
-                <a class="comprar1" href="#">
+                <img src="../img/1.jpg" alt="producto campera">
+                <h5>Campera Puffer</h5>
+                <p> $3000</p>
+                <a src="#">
                     <button>COMPRAR</button>
                 </a>
             </article>
             <article class="producto2">
-                <img class="imagen2" src="../img/2.jpg" alt="producto cargo">
-                <h5 class="nombre2">Cargo Beige</h5>
-                <p class="precio2">$1300</p>
-                <a class="comprar2" href="#">
+                <img src="../img/2.jpg" alt="producto cargo">
+                <h5>Cargo Beige</h5>
+                <p>$1300</p>
+                <a href="#">
                     <button>COMPRAR</button>
                 </a>
             </article>
             <article class="producto3">
-                <img class="imagen3" src="../img/3.jpg" alt="producto cargo">
-                <h5 class="nombre3">Cargo verde</h5>
-                <p class="precio3"> $1300 </p>
-                <a class="comprar3" src="#">
+                <img src="../img/3.jpg" alt="producto cargo">
+                <h5>Cargo verde</h5>
+                <p> $1300 </p>
+                <a src="#">
                     <button>COMPRAR</button>
                 </a>
             </article>
         </section>
         <section class="catalogo">
             <article class="producto4">
-                <img class="imagen1" src="../img/4.jpg" alt="producto remera">
-                <h5 class="nombre1">Remera Los Angeles</h5>
-                <p class="precio5"> $1000</p>
-                <a class="comprar1" href="#">
+                <img src="../img/4.jpg" alt="producto remera">
+                <h5>Remera Los Angeles</h5>
+                <p> $1000</p>
+                <a href="#">
                     <button>COMPRAR</button>
                 </a>
             </article>
             <article class="producto5">
-                <img class="imagen2" src="../img/5.jpg" alt="producto remera">
-                <h5 class="nombre2">Remera oversize gris</h5>
-                <p class="precio2">$1100</p>
-                <a class="comprar2" href="#">
+                <img src="../img/5.jpg" alt="producto remera">
+                <h5>Remera oversize gris</h5>
+                <p>$1100</p>
+                <a href="#">
                     <button>COMPRAR</button>
                 </a>
             </article>
             <article class="producto6">
-                <img class="imagen3" src="../img/6.jpg" alt="producto remera">
-                <h5 class="nombre3">Remera oversize mariposas</h5>
-                <p class="precio3"> $1100 </p>
-                <a class="comprar3" href="#">
+                <img src="../img/6.jpg" alt="producto remera">
+                <h5>Remera oversize mariposas</h5>
+                <p> $1100 </p>
+                <a href="#">
                     <button>COMPRAR</button>
                 </a>
             </article>
@@ -120,6 +157,29 @@
         menuToggle.addEventListener("click", () => {
             menu.classList.toggle("active");
         });
+    </script>
+    <script>
+        const carouselContent = document.querySelector('.carousel-content');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const itemWidth = carouselContent.clientWidth / 3;
+        let currentIndex = 0;
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + 3) % 3;
+            updateCarouselPosition();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % 3;
+            updateCarouselPosition();
+        });
+
+        function updateCarouselPosition() {
+            const newPosition = -currentIndex * itemWidth;
+            carouselContent.style.transform = `translateX(${newPosition}px)`;
+        }
+        updateCarouselPosition();
     </script>
 </body>
 
