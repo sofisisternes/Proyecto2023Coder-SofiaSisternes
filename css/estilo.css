@@ -207,13 +207,14 @@ main p {
 
 .catalogo {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 300px 300px 300px;
   grid-template-rows: auto auto;
   grid-template-areas: "producto1 producto2 producto3" "producto4 producto5 producto6";
   text-align: center;
   align-items: center;
-  justify-content: space-around;
+  place-content: center;
   row-gap: 20px;
+  gap: 3rem;
   margin: 10px; }
   .catalogo .producto1 {
     grid-area: producto1; }
@@ -268,6 +269,21 @@ main p {
   margin: auto;
   overflow: hidden;
   position: relative; }
+  #textCarousel #prevBtn,
+  #textCarousel #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 5px; }
+  #textCarousel #prevBtn {
+    left: 10px; }
+  #textCarousel #nextBtn {
+    right: 10px; }
   #textCarousel .carousel-content {
     display: flex;
     width: 300%;
@@ -278,10 +294,12 @@ main p {
     padding: 20px;
     box-sizing: border-box;
     display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     text-align: center; }
-    #textCarousel .carousel-item img {
+    #textCarousel .carousel-item .carousel__sale {
       max-width: 50%;
       width: auto; }
     #textCarousel .carousel-item button {
@@ -297,20 +315,17 @@ main p {
       margin: 5px; }
       #textCarousel .carousel-item button:hover {
         opacity: 0.5; }
-  #textCarousel #prevBtn,
-  #textCarousel #nextBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer; }
-  #textCarousel #prevBtn {
-    left: 10px;
-    background-color: red; }
-  #textCarousel #nextBtn {
-    right: 10px; }
 
 .preguntas {
   font-weight: bold; }
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(242, 232, 211, 0.5);
+  color: black; }
+
+.accordion-button:focus {
+  border: 1px solid #F2E8D3;
+  box-shadow: none; }
 
 .centrartabla {
   text-align: center; }
@@ -319,18 +334,20 @@ main p {
   margin: 30px;
   display: flex;
   justify-content: center;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  height: auto; }
   .form2 input {
     margin-bottom: 10px;
+    margin-right: 50px;
     width: 100%;
-    border-radius: 10px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; }
+  .form2 .mensaje__boton input {
     background-color: white;
-    border: 1px solid black; }
+    color: black; }
   .form2 .mapa iframe {
-    margin-left: 20px;
+    margin-left: 50px;
     width: auto;
-    height: 300px;
+    height: 500px;
     text-align: center; }
   .form2 .mensaje {
     height: 150px;
@@ -470,6 +487,59 @@ footer {
       grid-area: producto6; } }
 
 @media only screen and (max-width: 480px) {
+  #textCarousel {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    position: relative; }
+    #textCarousel #prevBtn,
+    #textCarousel #nextBtn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      z-index: 2;
+      background-color: white;
+      border: 1px black solid;
+      border-radius: 10px;
+      padding: 2px; }
+    #textCarousel #prevBtn {
+      left: 5px; }
+    #textCarousel #nextBtn {
+      right: 5px; }
+    #textCarousel .carousel-content {
+      display: flex;
+      width: 300%;
+      transition: transform 0.5s ease-in-out; }
+    #textCarousel .carousel-item {
+      flex-shrink: 0;
+      width: 33.33%;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      max-width: 1000px;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      #textCarousel .carousel-item .carousel__sale {
+        max-width: 50%;
+        width: auto; }
+      #textCarousel .carousel-item button {
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        border: black solid 1px;
+        font-size: 10px;
+        font-weight: bold;
+        width: auto;
+        transition: opacity 0.3s ease;
+        padding: 5px;
+        margin: 5px; }
+        #textCarousel .carousel-item button:hover {
+          opacity: 0.5; } }
+
+@media only screen and (max-width: 480px) {
   .duda {
     height: auto;
     width: 90%;
@@ -523,15 +593,15 @@ footer {
     .nosotros .carousel-control-prev,
     .nosotros .carousel-control-next button {
       margin: 0; }
-  article {
-    background-color: white;
-    border: solid 2px black;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center; }
-    article img {
-      width: 50px;
-      height: 50px; } }
+    .nosotros article {
+      background-color: white;
+      border: solid 2px black;
+      border-radius: 10px;
+      padding: 5px;
+      text-align: center; }
+      .nosotros article img {
+        width: 50px;
+        height: 50px; } }
 
 @media only screen and (max-width: 480px) {
   footer {

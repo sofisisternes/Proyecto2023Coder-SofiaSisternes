@@ -116,6 +116,7 @@
             "producto5"
             "producto6";
 
+
         img {
             width: 100%;
             max-width: 300px;
@@ -164,6 +165,77 @@
 
         .producto6 {
             grid-area: producto6;
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #textCarousel {
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+
+        #prevBtn,
+        #nextBtn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 2;
+            background-color: white;
+            border: 1px black solid;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        #prevBtn {
+            left: 5px;
+        }
+
+        #nextBtn {
+            right: 5px;
+        }
+
+        .carousel-content {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            flex-shrink: 0;
+            width: 33.33%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            max-width: 1000px;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            text-align: $text;
+
+            .carousel__sale {
+                max-width: 50%;
+                width: auto;
+            }
+
+            button {
+                background-color: white;
+                border-radius: 5px;
+                color: black;
+                border: black solid 1px;
+                font-size: 10px;
+                font-weight: bold;
+                width: auto;
+                transition: opacity 0.3s ease;
+                padding: 5px;
+                margin: 5px;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
         }
     }
 }
@@ -247,22 +319,23 @@
         }
 
         .carousel-control-prev,
-        .carousel-control-next button{
+        .carousel-control-next button {
             margin: 0;
         }
-    }
 
-    article {
-        background-color: white;
-        border: solid 2px black;
-        border-radius: 10px;
-        padding: 5px;
-        text-align: $text;
+        article {
+            background-color: white;
+            border: solid 2px black;
+            border-radius: 10px;
+            padding: 5px;
+            text-align: $text;
 
-        img {
-            width: 50px;
-            height: 50px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
         }
+
     }
 }
 

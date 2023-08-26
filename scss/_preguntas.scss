@@ -1,7 +1,14 @@
 .preguntas {
     @include preguntas;
 }
-
-.centrartabla {
-    @include centrartabla
-}
+.accordion-button:not(.collapsed) {
+        background-color: rgba($fondo2, 0.5);
+        color: black;
+    }
+    .accordion-button:focus {
+        border: 1px solid $fondo2;
+        box-shadow: none;
+    }
+    .centrartabla {
+        @include centrartabla
+    }
