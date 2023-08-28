@@ -1,7 +1,13 @@
-@mixin preguntas {
+@mixin boton__estilo {
+    background-color: white;
+    border-radius: 5px;
+    color: $color;
+    border: $color solid 1px;
+    font-family: $font;
+    font-size: medium;
     font-weight: bold;
-}
-
-@mixin centrartabla {
-    text-align: $text
+    width: 100px;
+    transition: opacity 0.3s ease;
+    padding: 5px;
+    margin: 5px;
 }

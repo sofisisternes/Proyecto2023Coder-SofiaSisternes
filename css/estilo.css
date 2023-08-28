@@ -177,7 +177,7 @@ main p {
   grid-template-columns: 2fr 2fr 2fr 2fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
-  grid-template-areas: ". carrusel carrusel ." ". somos somos ." ". valores valores ." ". mision mision ." ". vision vision .";
+  grid-template-areas: ". carrusel carrusel ." "somos somos . ." ". . valores valores" "mision mision . ." ". . vision vision";
   text-align: center;
   justify-content: center;
   margin: 50px; }
@@ -241,6 +241,7 @@ main p {
     border-radius: 5px;
     color: black;
     border: black solid 1px;
+    font-family: "Montserrat", sans-serif;
     font-size: medium;
     font-weight: bold;
     width: 100px;
@@ -286,11 +287,11 @@ main p {
     right: 10px; }
   #textCarousel .carousel-content {
     display: flex;
-    width: 300%;
+    width: 100%;
     transition: transform 0.5s ease-in-out; }
   #textCarousel .carousel-item {
     flex-shrink: 0;
-    width: 33.33%;
+    width: 100%;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -307,6 +308,7 @@ main p {
       border-radius: 5px;
       color: black;
       border: black solid 1px;
+      font-family: "Montserrat", sans-serif;
       font-size: medium;
       font-weight: bold;
       width: 100px;
@@ -334,21 +336,20 @@ main p {
   margin: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
   height: auto; }
   .form2 input {
     margin-bottom: 10px;
-    margin-right: 50px;
     width: 100%;
     font-family: "Montserrat", sans-serif; }
   .form2 .mensaje__boton input {
     background-color: white;
-    color: black; }
-  .form2 .mapa iframe {
-    margin-left: 50px;
-    width: auto;
-    height: 500px;
-    text-align: center; }
+    color: black;
+    border-radius: 10px;
+    padding: 5px; }
+  .form2 .datos__foto {
+    left: 10px; }
   .form2 .mensaje {
     height: 150px;
     color: #888;
@@ -487,57 +488,37 @@ footer {
       grid-area: producto6; } }
 
 @media only screen and (max-width: 480px) {
-  #textCarousel {
-    width: 50%;
-    margin: auto;
-    overflow: hidden;
-    position: relative; }
-    #textCarousel #prevBtn,
-    #textCarousel #nextBtn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-      z-index: 2;
+  .carousel-content {
+    display: flex;
+    width: 600%;
+    transition: transform 0.5s ease-in-out; }
+  .carousel-item {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .carousel-item .carousel__sale {
+      max-width: 80%;
+      width: auto; }
+    .carousel-item .boton__estilo {
       background-color: white;
-      border: 1px black solid;
-      border-radius: 10px;
-      padding: 2px; }
-    #textCarousel #prevBtn {
-      left: 5px; }
-    #textCarousel #nextBtn {
-      right: 5px; }
-    #textCarousel .carousel-content {
-      display: flex;
-      width: 300%;
-      transition: transform 0.5s ease-in-out; }
-    #textCarousel .carousel-item {
-      flex-shrink: 0;
-      width: 33.33%;
-      padding: 20px;
-      box-sizing: border-box;
-      display: flex;
-      max-width: 1000px;
-      margin: 0 auto;
-      align-items: center;
-      justify-content: center;
-      text-align: center; }
-      #textCarousel .carousel-item .carousel__sale {
-        max-width: 50%;
-        width: auto; }
-      #textCarousel .carousel-item button {
-        background-color: white;
-        border-radius: 5px;
-        color: black;
-        border: black solid 1px;
-        font-size: 10px;
-        font-weight: bold;
-        width: auto;
-        transition: opacity 0.3s ease;
-        padding: 5px;
-        margin: 5px; }
-        #textCarousel .carousel-item button:hover {
-          opacity: 0.5; } }
+      border-radius: 5px;
+      color: black;
+      border: black solid 1px;
+      font-size: 5px;
+      font-weight: bold;
+      width: auto;
+      transition: opacity 0.3s ease;
+      padding: 3px;
+      margin: 5px; }
+      .carousel-item .boton__estilo:hover {
+        opacity: 0.5; } }
 
 @media only screen and (max-width: 480px) {
   .duda {

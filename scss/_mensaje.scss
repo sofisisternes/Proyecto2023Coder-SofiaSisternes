@@ -2,25 +2,25 @@
     margin: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: $font;
     height: auto;
 
     input {
-        margin-bottom: 10px;
-        margin-right: 50px;
+        margin-bottom: 10px;        
         width: 100%;
         font-family: $font;
     }
+
     .mensaje__boton input {
         background-color: white;
-        color: black;
+        color: $color;
+        border-radius: 10px;
+        padding: 5px;
     }
 
-    .mapa iframe {
-        margin-left: 50px;
-        width: auto;
-        height: 500px;
-        text-align: $text;
+    .datos__foto {
+        left: 10px;
     }
 
     .mensaje {

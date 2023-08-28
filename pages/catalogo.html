@@ -38,9 +38,9 @@
                 <div class="carousel-item">
                     <article>
                         <h5>Body liso</h5>
-                        <p> <del>$900</del>&nbsp;$720 </p>                        
+                        <p> <del>$900</del>&nbsp;$720 </p>
                         <a src="#">
-                            <button>COMPRAR</button>
+                            <button class="boton__estilo">COMPRAR</button>
                         </a>
                         <img class="carousel__sale" src="../img/13.jpg" alt="producto body">
                     </article>
@@ -48,9 +48,9 @@
                 <div class="carousel-item">
                     <article>
                         <h5>Campera marron cordero</h5>
-                        <p><del>$2600</del>&nbsp;$2080</p>                        
+                        <p><del>$2600</del>&nbsp;$2080</p>
                         <a src="#">
-                            <button>COMPRAR</button>
+                            <button class="boton__estilo">COMPRAR</button>
                         </a>
                         <img class="carousel__sale" src="../img/14.jpg" alt="producto campera">
                     </article>
@@ -60,9 +60,39 @@
                         <h5>Ecocuero negro</h5>
                         <p> <del>$2500</del>&nbsp;$2000 </p>
                         <a src="#">
-                            <button>COMPRAR</button>
+                            <button class="boton__estilo">COMPRAR</button>
                         </a>
                         <img class="carousel__sale" src="../img/19.jpg" alt="producto pantalon">
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article>
+                        <h5>Campera blanca cordero</h5>
+                        <p> <del>$2000</del>&nbsp;$1600 </p>
+                        <a src="#">
+                            <button class="boton__estilo">COMPRAR</button>
+                        </a>
+                        <img class="carousel__sale" src="../img/16.jpg" alt="producto campera">
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article>
+                        <h5>Mini cuero negra</h5>
+                        <p> <del>$1300</del>&nbsp;$1040 </p>
+                        <a src="#">
+                            <button class="boton__estilo">COMPRAR</button>
+                        </a>
+                        <img class="carousel__sale" src="../img/17.jpg" alt="producto mini cuero">
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article>
+                        <h5>Campera jean</h5>
+                        <p> <del>$1900</del>&nbsp;$1520 </p>
+                        <a src="#">
+                            <button class="boton__estilo">COMPRAR</button>
+                        </a>
+                        <img class="carousel__sale" src="../img/18.jpg" alt="producto campera jean">
                     </article>
                 </div>
             </div>
@@ -75,7 +105,7 @@
                 <h5>Campera Puffer</h5>
                 <p> $3000</p>
                 <a src="#">
-                    <button>COMPRAR</button>
+                    <button class="boton__estilo">COMPRAR</button>
                 </a>
             </article>
             <article class="producto2">
@@ -83,7 +113,7 @@
                 <h5>Cargo Beige</h5>
                 <p>$1300</p>
                 <a href="#">
-                    <button>COMPRAR</button>
+                    <button class="boton__estilo">COMPRAR</button>
                 </a>
             </article>
             <article class="producto3">
@@ -91,7 +121,7 @@
                 <h5>Cargo verde</h5>
                 <p> $1300 </p>
                 <a src="#">
-                    <button>COMPRAR</button>
+                    <button class="boton__estilo">COMPRAR</button>
                 </a>
             </article>
         </section>
@@ -109,7 +139,7 @@
                 <h5>Remera oversize gris</h5>
                 <p>$1100</p>
                 <a href="#">
-                    <button>COMPRAR</button>
+                    <button class="boton__estilo">COMPRAR</button>
                 </a>
             </article>
             <article class="producto6">
@@ -117,7 +147,7 @@
                 <h5>Remera oversize mariposas</h5>
                 <p> $1100 </p>
                 <a href="#">
-                    <button>COMPRAR</button>
+                    <button class="boton__estilo">COMPRAR</button>
                 </a>
             </article>
         </section>
@@ -162,16 +192,16 @@
         const carouselContent = document.querySelector('.carousel-content');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
-        const itemWidth = carouselContent.clientWidth / 3;
+        const itemWidth = carouselContent.clientWidth;
         let currentIndex = 0;
 
         prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + 3) % 3;
+            currentIndex = (currentIndex - 1 + 6) % 6;
             updateCarouselPosition();
         });
 
         nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % 3;
+            currentIndex = (currentIndex + 1) % 6;
             updateCarouselPosition();
         });
 
