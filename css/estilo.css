@@ -175,9 +175,9 @@ main p {
 .nosotros {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 10px;
-  grid-template-areas: ". carrusel carrusel ." "somos somos . ." ". . valores valores" "mision mision . ." ". . vision vision";
+  grid-template-areas: "somos somos . ." ". . valores valores" "mision mision . ." ". . vision vision";
   text-align: center;
   justify-content: center;
   margin: 50px; }
@@ -200,10 +200,6 @@ main p {
     box-shadow: 0px 2px 4px black;
     padding: 20px;
     margin-top: 50px; }
-  .nosotros .carrusel {
-    width: 100%;
-    grid-area: carrusel;
-    justify-self: center; }
 
 .catalogo {
   display: grid;
@@ -269,7 +265,10 @@ main p {
   width: 60%;
   margin: auto;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background-color: #f6f6f6;
+  border: solid 1px #f6f6f6;
+  border-radius: 10px; }
   #textCarousel #prevBtn,
   #textCarousel #nextBtn {
     position: absolute;
@@ -293,8 +292,8 @@ main p {
     flex-shrink: 0;
     width: 100%;
     padding: 20px;
-    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
     align-items: center;
@@ -302,14 +301,15 @@ main p {
     text-align: center; }
     #textCarousel .carousel-item .carousel__sale {
       max-width: 50%;
-      width: auto; }
+      width: auto;
+      margin-bottom: 10px; }
     #textCarousel .carousel-item button {
       background-color: white;
       border-radius: 5px;
       color: black;
       border: black solid 1px;
       font-family: "Montserrat", sans-serif;
-      font-size: medium;
+      font-size: auto;
       font-weight: bold;
       width: 100px;
       transition: opacity 0.3s ease;
@@ -493,32 +493,33 @@ footer {
     width: 600%;
     transition: transform 0.5s ease-in-out; }
   .carousel-item {
-    flex-shrink: 0;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
     display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center; }
-    .carousel-item .carousel__sale {
-      max-width: 80%;
-      width: auto; }
-    .carousel-item .boton__estilo {
-      background-color: white;
-      border-radius: 5px;
-      color: black;
-      border: black solid 1px;
-      font-size: 5px;
-      font-weight: bold;
-      width: auto;
-      transition: opacity 0.3s ease;
-      padding: 3px;
-      margin: 5px; }
-      .carousel-item .boton__estilo:hover {
-        opacity: 0.5; } }
+    flex-direction: column;
+    padding: 10px; }
+  .carousel__sale {
+    max-width: 80%;
+    width: auto; }
+  .boton__estilo {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    border: black solid 1px;
+    font-size: auto;
+    font-weight: bold;
+    width: auto;
+    transition: opacity 0.3s ease;
+    padding: 3px;
+    margin: 5px; }
+    .boton__estilo:hover {
+      opacity: 0.5; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-item {
+    width: 50%; } }
+
+@media (min-width: 1025px) {
+  .carousel-item {
+    width: 33.33%; } }
 
 @media only screen and (max-width: 480px) {
   .duda {
@@ -557,7 +558,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "carrusel" "somos" "mision" "vision" "valores";
+    grid-template-areas: "somos" "mision" "vision" "valores";
     justify-content: center;
     align-items: center; }
     .nosotros .vision {
@@ -568,12 +569,6 @@ footer {
       grid-area: valores; }
     .nosotros .somos {
       grid-area: somos; }
-    .nosotros .carrusel {
-      width: 100%;
-      grid-area: carrusel; }
-    .nosotros .carousel-control-prev,
-    .nosotros .carousel-control-next button {
-      margin: 0; }
     .nosotros article {
       background-color: white;
       border: solid 2px black;

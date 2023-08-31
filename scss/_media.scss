@@ -177,38 +177,44 @@
     }
 
     .carousel-item {
-        flex-shrink: 0;
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
         display: flex;
-        max-width: 1000px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        text-align: $text;
+        flex-direction: column;
+        padding: 10px;
+    }
 
-        .carousel__sale {
-            max-width: 80%;
-            width: auto;
+    .carousel__sale {
+        max-width: 80%;
+        width: auto;
+    }
+
+    .boton__estilo {
+        background-color: white;
+        border-radius: 5px;
+        color: $color;
+        border: $color solid 1px;
+        font-size: auto;
+        font-weight: bold;
+        width: auto;
+        transition: opacity 0.3s ease;
+        padding: 3px;
+        margin: 5px;
+
+        &:hover {
+            opacity: 0.5;
         }
+    }
+}
 
-        .boton__estilo {
-            background-color: white;
-            border-radius: 5px;
-            color: $color;
-            border: $color solid 1px;
-            font-size: 5px;
-            font-weight: bold;
-            width: auto;
-            transition: opacity 0.3s ease;
-            padding: 3px;
-            margin: 5px;
 
-            &:hover {
-                opacity: 0.5;
-            }
-        }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel-item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .carousel-item {
+        width: 33.33%;
     }
 }
 
@@ -261,7 +267,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
-            "carrusel"
             "somos"
             "mision"
             "vision"
@@ -285,16 +290,6 @@
             grid-area: somos;
         }
 
-        .carrusel {
-            width: 100%;
-            grid-area: carrusel;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next button {
-            margin: 0;
-        }
-
         article {
             background-color: white;
             border: solid 2px $color;
@@ -307,7 +302,6 @@
                 height: 50px;
             }
         }
-
     }
 }
 
