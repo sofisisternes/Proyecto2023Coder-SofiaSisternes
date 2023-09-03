@@ -1,14 +1,17 @@
 .preguntas {
     font-weight: bold;
 }
+
 .accordion-button:not(.collapsed) {
-        background-color: rgba($fondo2, 0.5);
-        color: $color;
-    }
-    .accordion-button:focus {
-        border: 1px solid $fondo2;
-        box-shadow: none;
-    }
-    .centrartabla {
-        text-align: $text;
-    }
+    background-color: rgba($fondo2, 0.5);
+    color: $color;
+}
+
+.accordion-button:focus {
+    border: 1px solid $fondo2;
+    box-shadow: none;
+}
+
+.centrartabla {
+    text-align: $text;
+}
