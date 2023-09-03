@@ -256,7 +256,8 @@ main p {
     border: black 1px solid;
     border-radius: 10px;
     justify-content: space-between;
-    padding: 10px; }
+    padding: 10px;
+    margin: 10px; }
     .cambiopagina .cambio a {
       text-decoration: none;
       color: black; }
@@ -268,7 +269,8 @@ main p {
   position: relative;
   background-color: #f6f6f6;
   border: solid 1px #f6f6f6;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px black; }
   #textCarousel #prevBtn,
   #textCarousel #nextBtn {
     position: absolute;
@@ -332,33 +334,33 @@ main p {
 .centrartabla {
   text-align: center; }
 
-.form2 {
-  margin: 30px;
+.contacto {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
-  height: auto; }
-  .form2 input {
-    margin-bottom: 10px;
-    width: 100%;
-    font-family: "Montserrat", sans-serif; }
-  .form2 .mensaje__boton input {
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    padding: 5px; }
-  .form2 .datos__foto {
-    left: 10px; }
-  .form2 .mensaje {
-    height: 150px;
-    color: #888;
+  flex-direction: row;
+  justify-content: center; }
+  .contacto .form2 {
+    margin: 30px;
+    align-items: center;
     font-family: "Montserrat", sans-serif;
-    resize: none;
-    width: 100%; }
-    .form2 .mensaje .mensaje::placeholder {
-      color: #ccc;
+    height: auto; }
+    .contacto .form2 input {
+      margin-bottom: 10px;
+      width: 100%;
       font-family: "Montserrat", sans-serif; }
+    .contacto .form2 .mensaje__boton input {
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      padding: 5px; }
+    .contacto .form2 .mensaje {
+      height: 150px;
+      color: #888;
+      font-family: "Montserrat", sans-serif;
+      resize: none;
+      width: 100%; }
+      .contacto .form2 .mensaje .mensaje::placeholder {
+        color: #ccc;
+        font-family: "Montserrat", sans-serif; }
 
 footer {
   display: flex;
@@ -466,14 +468,6 @@ footer {
       width: 80%;
       height: auto;
       margin: auto; }
-    .catalogo button {
-      background-color: white;
-      border-radius: 10px;
-      color: black;
-      border: black solid 1px;
-      font-size: medium;
-      font-weight: bold;
-      width: 100px; }
     .catalogo .producto1 {
       grid-area: producto1; }
     .catalogo .producto2 {
@@ -537,21 +531,11 @@ footer {
       width: auto; } }
 
 @media only screen and (max-width: 480px) {
-  .form2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "datos__form";
-    margin: 0 auto;
-    justify-items: center; }
-    .form2 .datos__form {
-      grid-area: datos__form; }
-    .form2 .datos__foto img {
-      justify-content: center;
-      align-items: center;
-      width: 90%;
-      height: auto;
-      margin-top: 10px; } }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media only screen and (max-width: 480px) {
   .nosotros {
@@ -585,3 +569,13 @@ footer {
     font-size: xx-small;
     margin: 0;
     justify-content: center; } }
+
+@media only screen and (max-width: 480px) {
+  button {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    border: black solid 1px;
+    font-size: medium;
+    font-weight: bold;
+    width: 100px; } }

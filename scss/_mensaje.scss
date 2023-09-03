@@ -1,39 +1,38 @@
-.form2 {
-    margin: 30px;
+.contacto {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    font-family: $font;
-    height: auto;
 
-    input {
-        margin-bottom: 10px;        
-        width: 100%;
+    .form2 {
+        margin: 30px;
+        align-items: center;
         font-family: $font;
-    }
+        height: auto;
 
-    .mensaje__boton input {
-        background-color: white;
-        color: $color;
-        border-radius: 10px;
-        padding: 5px;
-    }
-
-    .datos__foto {
-        left: 10px;
-    }
-
-    .mensaje {
-        height: 150px;
-        color: #888;
-        font-family: $font;
-        resize: none;
-        width: 100%;
-
-        .mensaje::placeholder {
-            color: #ccc;
+        input {
+            margin-bottom: 10px;
+            width: 100%;
             font-family: $font;
         }
 
+        .mensaje__boton input {
+            background-color: white;
+            color: $color;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .mensaje {
+            height: 150px;
+            color: #888;
+            font-family: $font;
+            resize: none;
+            width: 100%;
+
+            .mensaje::placeholder {
+                color: #ccc;
+                font-family: $font;
+            }
+        }
     }
 }

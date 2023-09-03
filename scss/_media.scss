@@ -133,16 +133,6 @@
             margin: auto;
         }
 
-        button {
-            background-color: white;
-            border-radius: 10px;
-            color: $color;
-            border: $color solid 1px;
-            font-size: medium;
-            font-weight: bold;
-            width: 100px;
-        }
-
         .producto1 {
             grid-area: producto1;
         }
@@ -238,26 +228,11 @@
 }
 
 @media only screen and (max-width:480px) {
-    .form2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "datos__form";
-        margin: 0 auto;
-        justify-items: center;
-
-        .datos__form {
-            grid-area: datos__form;
-        }
-
-        .datos__foto img {
-            justify-content: center;
-            align-items: center;
-            width: 90%;
-            height: auto;
-            margin-top: 10px;
-        }
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -312,5 +287,17 @@
         margin: 0;
         justify-content: center;
 
+    }
+}
+
+button {
+    @include mobile {
+        background-color: white;
+        border-radius: 10px;
+        color: $color;
+        border: $color solid 1px;
+        font-size: medium;
+        font-weight: bold;
+        width: 100px;
     }
 }
