@@ -480,6 +480,15 @@ footer {
       grid-area: producto5; }
     .catalogo .producto6 {
       grid-area: producto6; } }
+  @media only screen and (max-width: 480px) and (max-width: 480px) {
+    .catalogo button {
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+      border: black solid 1px;
+      font-size: medium;
+      font-weight: bold;
+      width: 100px; } }
 
 @media only screen and (max-width: 480px) {
   .carousel-content {
@@ -507,13 +516,9 @@ footer {
     .boton__estilo:hover {
       opacity: 0.5; } }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1920px) {
   .carousel-item {
     width: 50%; } }
-
-@media (min-width: 1025px) {
-  .carousel-item {
-    width: 33.33%; } }
 
 @media only screen and (max-width: 480px) {
   .duda {
@@ -569,13 +574,3 @@ footer {
     font-size: xx-small;
     margin: 0;
     justify-content: center; } }
-
-@media only screen and (max-width: 480px) {
-  button {
-    background-color: white;
-    border-radius: 10px;
-    color: black;
-    border: black solid 1px;
-    font-size: medium;
-    font-weight: bold;
-    width: 100px; } }

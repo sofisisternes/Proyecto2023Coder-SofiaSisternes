@@ -156,6 +156,18 @@
         .producto6 {
             grid-area: producto6;
         }
+
+        button {
+            @include mobile {
+                background-color: white;
+                border-radius: 10px;
+                color: $color;
+                border: $color solid 1px;
+                font-size: medium;
+                font-weight: bold;
+                width: 100px;
+            }
+        }
     }
 }
 
@@ -195,16 +207,9 @@
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1920px) {
     .carousel-item {
         width: 50%;
-    }
-}
-
-@media (min-width: 1025px) {
-    .carousel-item {
-        width: 33.33%;
     }
 }
 
@@ -287,17 +292,5 @@
         margin: 0;
         justify-content: center;
 
-    }
-}
-
-button {
-    @include mobile {
-        background-color: white;
-        border-radius: 10px;
-        color: $color;
-        border: $color solid 1px;
-        font-size: medium;
-        font-weight: bold;
-        width: 100px;
     }
 }
